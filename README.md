@@ -86,6 +86,25 @@ VDD -> +5V
 
 -> Resource-optimized 4-bit parallel display control running cleanly on a single port
 
+**🖥️ Simulation Results**
+
+The Proteus simulation was performed under multiple operating conditions to validate the system's functionality.
+
+**🚀 System Initialization**
+The system initializes successfully and displays the startup message on the LCD.
+
+![System Initialization](outputs/System_Initialization.png)
+
+**✅ Test Case 1 – Intruder Detected | Light OFF | Fan ON**
+The system detects an intruder while the ambient light remains sufficient, keeping the light OFF. Since the temperature exceeds the threshold, the fan turns ON automatically.
+
+![Test Case 1](outputs/Testcase_1.png)
+
+**✅ Test Case 2 – Intruder Detected | Light OFF | Fan OFF**
+The system detects an intruder while sufficient ambient light keeps the light OFF. As the temperature remains below the threshold, the fan remains OFF.
+
+![Test Case 2](outputs/Testcase_2.png)
+
 **🚀 Skills Demonstrated**
 
 -> Embedded C programming (8051 architecture)
